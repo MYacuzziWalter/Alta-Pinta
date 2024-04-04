@@ -1,0 +1,564 @@
+/*----reset----*/
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*---HEADER----*/
+
+header {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+header nav ul li {
+    margin: 15px;
+    text-decoration: none;
+}
+
+
+header nav ul li a {
+    margin-right: 20px;
+    font-family: "Atma", system-ui;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/*--------------------MAIN-----------------*/
+
+
+
+
+.hero {
+    color: white;
+    background-image: url(../img/WhatsApp\ Image\ 2024-03-15\ at\ 22.04.11.jpeg);
+    width: 100%;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero h1 {
+    font-family: "Atma", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 55px;
+    border: yellow 3px solid;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+
+.hero p {
+    background-color: rgba(27, 94, 66, 0.425);
+    font-weight: 800;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+h2 {
+    text-align: center;
+    background-color: rgb(27, 94, 66);
+    height: 90px;
+    color: white;
+    font-family: "Atma", system-ui;
+    font-weight: 600;
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+
+.tarjetas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box:hover {
+    width: 310px;
+    height: 460px;
+}
+
+.box {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 10px;
+    margin:  50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
+    -webkit-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
+    -moz-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
+}
+
+
+.box img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+
+.box h3 {
+    padding-bottom: 40px;
+}
+
+
+.box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box div a {
+    padding: 5px;
+    font-size: 10px;
+    background-color: rgb(13, 17, 226);
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/*!----------------Pagina Eventos------------*/
+
+
+
+
+.eventos-r {
+    background-color: white;
+    border: 3px black solid;
+    margin: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.eventos-r div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.eventos-r img {
+    width: 600px;
+    height: 400px;
+}
+
+
+.eventos-r p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.eventos-r div a {
+    margin: 20px;
+    background-color: rgb(169, 226, 13);
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.eventos1 {
+    background-color: white;
+    border: 3px black solid;
+    margin: 10px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.eventos1 p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.eventos1 div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventos1 div a {
+    margin: 20px;
+    background-color: rgb(169, 226, 13);
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.eventos1 img {
+    height: 400px;
+}
+
+
+
+
+
+/*!--------nosotros---------!*/
+
+
+
+.nosotros {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nosotros img {
+    width: 500px;
+    height: 700px;
+}
+
+
+
+
+
+/*!--------estacion-------*/
+
+.estacion-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.estacion-img img {
+    width: 700px;
+    height: 1000px;
+}
+
+
+.text {
+    text-align: center;
+    font-weight: 800;
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+.formu {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.formulario form {
+    width: 300px;
+    height: 150px;
+    border: solid gray 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formu p {
+    font-weight: 350;
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+/*!------------contacto---------------!*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+
+.logo img{
+    width: 30px;
+    margin: 5px;
+}
+
+
+.formulario div {
+    margin: 10px;
+}
+
+
+
+
+
+/*!--------GALERIA DE FOTOS-------*/
+
+.grid-galeria {
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+
+
+
+}
+
+
+.grid-item {
+    position: relative;
+}
+
+
+.grid-item h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: #0000008f;
+    width: 100%;
+}
+
+
+.grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    box-shadow: -8px 8px 15px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -8px 8px 15px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 8px 15px -5px rgba(0,0,0,0.75);
+}
+
+
+.img-1 {
+    grid-column: span 2;
+}
+
+.img-6 {
+    grid-row: span 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------FOOTER---------------*/
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer ul li {
+    margin: 15px;
+    list-style: none;
+}
+
+
+footer ul li a {
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+
+footer div a {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*------------------MEDIA----------------*/
+
+
+@media screen and (max-width:1043px) {
+    header {
+        flex-direction: column;
+    }
+    header nav ul li a {
+        font-size: 16px;
+    }
+    .hero h1 {
+        font-family: "Atma", system-ui;
+        font-size: 50px;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+    .hero p {
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width:936px) {
+    footer ul li {
+        margin: 5px;
+    }
+    footer div a {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:776px){
+    header{
+        position: static;
+    }
+    .hero h1 {
+        font-size: 40px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .hero p {
+        font-size: 20px;
+    }
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul li {
+        margin: 0px;
+        text-decoration: none;
+    }
+}
+
+
+
+@media screen and (max-width:697px) {
+    footer ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+    .hero p {
+        font-size: 15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+}
