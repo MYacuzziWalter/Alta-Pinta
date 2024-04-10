@@ -16,41 +16,13 @@
 
 /*---HEADER----*/
 
-header {
+.nav-background {
     background-color: antiquewhite;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-
-
-
-header nav ul {
-    list-style: none;
-    display: flex;
+nav img {
+    height: 100px;
 }
-
-
-header nav ul li {
-    margin: 15px;
-    text-decoration: none;
-}
-
-
-header nav ul li a {
-    margin-right: 20px;
-    font-family: "Atma", system-ui;
-    font-weight: 600;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
-
-
 
 
 
@@ -98,12 +70,14 @@ header nav ul li a {
 h2 {
     text-align: center;
     background-color: rgb(27, 94, 66);
-    height: 90px;
+    height: 80px;
     color: white;
     font-family: "Atma", system-ui;
     font-weight: 600;
     font-size: 35px;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -113,10 +87,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.box:hover {
-    width: 310px;
-    height: 460px;
-}
+
 
 .box {
     width: 300px;
@@ -435,6 +406,8 @@ h2 {
 
 
 footer {
+    height: 80px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
