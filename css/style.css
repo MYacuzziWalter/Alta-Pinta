@@ -24,6 +24,11 @@ nav img {
     height: 100px;
 }
 
+nav div div ul li a {
+    font-family: "Atma", system-ui;
+    font-size: 18px !important;
+}
+
 
 
 /*--------------------MAIN-----------------*/
@@ -55,12 +60,15 @@ nav img {
     border: yellow 3px solid;
     padding: 10px;
     margin-bottom: 40px;
+    background-color: rgba(15, 15, 15, 0.397);
 }
 
 
 .hero p {
+    font-family: "Atma", system-ui;
+    font-weight: 500;
+    font-style: normal;
     background-color: rgba(27, 94, 66, 0.425);
-    font-weight: 800;
     color: white;
     font-size: 25px;
     font-style: italic;
