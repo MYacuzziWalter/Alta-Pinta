@@ -202,6 +202,7 @@ h3 {
 
 
 
+
 /*!-----------------------------FOOTER---------------------------------*/
 
 
@@ -368,7 +369,7 @@ footer a i {
 
 
 
-/*!---------------------------------Nosotros-----------------------------!*/
+/*!---------------------------------NOSOTROS-----------------------------!*/
 
 
 
@@ -422,20 +423,15 @@ footer a i {
 
 
 /*!----------------------------Estacion del arte-------------------------*/
-.banner {
-    width: 80%;
-    height: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.9;
+.e-banner {
+    width: 100%;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.banner::before {
+.e-banner::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -444,53 +440,56 @@ footer a i {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.5;
-
 }
+
 
 .text-banner {
-    text-align: start;
-    font-weight: 800;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
-    top: 0;
 }
 
+.e-imagen {
+    display: flex;
+    justify-content: space-around;
+}
 
+.e-imagen img {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
 
 .formu {
-    height: 300px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.formulario form {
-    width: 300px;
-    height: 150px;
-    border: solid gray 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-
-
+    align-items: center;
+} 
 .formu p {
-    font-weight: 350;
-    color: black;
     font-size: 25px;
-    font-style: italic;
 }
+
+.formu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 
 /*!------------------------------Contacto--------------------------!*/
