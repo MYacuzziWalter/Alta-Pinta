@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Atma", system-ui !important; }
+
+.nav-background {
+  background-color: black; }
+
+.navbar-toggler {
+  font-size: 15px;
+  background-color: white !important; }
+
+header nav div a img {
+  height: 100px; }
+
+header nav div button {
+  color: white !important; }
+
+header nav div ul li a {
+  color: white !important;
+  font-family: "Atma", system-ui;
+  font-size: 18px !important;
+  font-weight: 500 !important; }
+
+main .hero {
+  color: white;
+  background-image: url(../img/Fondo-hero.jpeg);
+  width: 100%;
+  height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .hero h1 {
+    font-weight: 500;
+    font-size: 55px;
+    border: yellow 3px solid;
+    padding: 10px;
+    margin-bottom: 40px;
+    background-color: rgba(15, 15, 15, 0.397); }
+    main .hero h1 span:nth-child(1) {
+      color: #fbff1c; }
+    main .hero h1 span:nth-child(2) {
+      color: rgba(240, 17, 17, 0.877); }
+    main .hero h1 span:nth-child(3) {
+      color: #ec48f1; }
+    main .hero h1 span:nth-child(4) {
+      color: #54cef3; }
+  main .hero a button {
+    font-size: 20px;
+    padding: 10px 50px; }
+  main .hero h2 {
+    font-weight: 500;
+    font-size: 55px;
+    border: yellow 3px solid;
+    padding: 10px;
+    margin-bottom: 40px;
+    background-color: rgba(15, 15, 15, 0.397); }
+  main .hero p {
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgba(27, 94, 66, 0.425);
+    color: white;
+    font-size: 25px;
+    font-style: italic; }
+
+main section h3 {
+  text-align: center;
+  background-image: url(../img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  color: #0c0c0c;
+  font-weight: 600;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .tarjetas {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  main .tarjetas .box {
+    background: linear-gradient(50deg, rgba(56, 56, 56, 0.288), white);
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
+    transition: 0.3s;
+    transition-delay: 0.3s; }
+    main .tarjetas .box:hover {
+      background-color: black;
+      color: white;
+      transform: scale(1.1); }
+    main .tarjetas .box img {
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 30px; }
+    main .tarjetas .box div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .tarjetas .box div button {
+        transition: 1s; }
+        main .tarjetas .box div button:hover {
+          color: white; }
+        main .tarjetas .box div button a {
+          color: black;
+          list-style: none;
+          text-decoration: none; }
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer div a i {
+      color: black;
+      font-size: 25px;
+      text-align: center;
+      padding-bottom: 50px; }
+  footer ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer ul li {
+      margin: 25px;
+      list-style: none; }
+      footer ul li a {
+        font-family: "Atma", system-ui;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: none;
+        color: black; }

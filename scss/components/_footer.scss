@@ -1,0 +1,39 @@
+footer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            i {
+                color: rgb(0, 0, 0);
+                font-size: 25px;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+
+        }
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        li {
+            margin: 25px;
+            list-style: none;
+            a {
+                font-family: "Atma", system-ui;
+                font-weight: 500;
+                font-size: 18px;
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
