@@ -8,10 +8,8 @@ main {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, column, center, center) 
+
         h1 {
             font-weight: 500;
             font-size: 55px;
@@ -19,33 +17,39 @@ main {
             padding: 10px;
             margin-bottom: 40px;
             background-color: rgba(15, 15, 15, 0.397);
+
             span {
                 &:nth-child(1) {
-                    color: rgb(251, 255, 28);
+                    color: nth($pintar-colores , 1);
                 }
             }
+
             span {
                 &:nth-child(2) {
-                    color: rgba(240, 17, 17, 0.877);
+                    color: nth($pintar-colores , 2);
                 }
             }
+
             span {
                 &:nth-child(3) {
-                    color: rgb(236, 72, 241);
+                    color: nth($pintar-colores , 3);
                 }
             }
+
             span {
                 &:nth-child(4) {
-                    color: rgb(84, 206, 243);
+                    color: nth($pintar-colores , 4);
                 }
             }
         }
+
         a {
             button {
                 font-size: 20px;
                 padding: 10px 50px;
             }
         }
+
         h2 {
             font-weight: 500;
             font-size: 55px;
@@ -54,6 +58,7 @@ main {
             margin-bottom: 40px;
             background-color: rgba(15, 15, 15, 0.397);
         }
+
         p {
             font-weight: 500;
             font-style: normal;
@@ -62,14 +67,15 @@ main {
             font-size: 25px;
             font-style: italic;
         }
-
     }
+
     section {
         h3 {
             text-align: center;
             background-image: url(../img/footer.jpg);
             background-position: center;
-            background-size: cover;    height: 80px;
+            background-size: cover;
+            height: 80px;
             color: rgb(12, 12, 12);
             font-weight: 600;
             font-size: 35px;
@@ -78,10 +84,12 @@ main {
             align-items: center;
         }
     }
+
     .tarjetas {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+
         .box {
             background: linear-gradient(50deg, rgba(56, 56, 56, 0.288), white);
             width: 300px;
@@ -96,30 +104,34 @@ main {
             box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
             -webkit-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
             -moz-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
-            transition: 0.3s;
-            transition-delay: 0.3s;
+            transition: 0.5s;
+
             &:hover {
                 background-color: black;
                 color: white;
                 transform: scale(1.1);
             }
+
             img {
                 object-fit: cover;
                 width: 100%;
                 height: 200px;
                 margin-bottom: 30px;
             }
+
             div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex (flex, column , center, center);
+                
+
                 button {
-                    transition: 1s;
-                    &:hover{
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: white;
                         color: rgb(255, 255, 255);
                     }
-                    a{
+
+                    a {
                         color: black;
                         list-style: none;
                         text-decoration: none;

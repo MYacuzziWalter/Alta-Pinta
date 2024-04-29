@@ -19,3 +19,29 @@ body {
     font-size: 15px;
     background-color: white !important;
 }
+
+h3 {
+    text-align: center;
+    background-image: url(../img/footer.jpg);
+    background-position: center;
+    background-size: cover;    height: 80px;
+    color: rgb(12, 12, 12);
+    font-weight: 600;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$pintar-colores: 
+rgb(251, 255, 28),
+rgba(240, 17, 17, 0.877),
+rgb(236, 72, 241),
+rgb(84, 206, 243);
+
+@mixin flex ($display, $direccion, $justify, $align){
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}

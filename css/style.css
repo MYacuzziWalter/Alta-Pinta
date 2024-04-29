@@ -110,6 +110,7 @@ nav div div ul li a {
 }
 
 .hero p {
+    text-align: center;
     font-weight: 500;
     font-style: normal;
     background-color: rgba(27, 94, 66, 0.425);
@@ -155,8 +156,7 @@ h3 {
     box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
     -webkit-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
     -moz-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
-    transition: 0.3s;
-    transition-delay: 0.3s;
+    transition: 0.5s;
 }
 
 .box:hover{
@@ -185,9 +185,10 @@ h3 {
 }
 
 .box div button {
-    transition: 1s;
+    transition: 0.5s;
 }
 .box div button:hover {
+    background-color: white;
     color: rgb(255, 255, 255);
 }
 
@@ -275,7 +276,7 @@ footer a i {
 .eventos-r {
     border-bottom: 1px solid rgba(104, 101, 101, 0.719);
     margin: 20px;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -296,7 +297,7 @@ footer a i {
 
 .eventos-r img {
     padding: 5px;
-    height: 100%;
+    height: 600px;
 }
 
 .eventos-r p {
@@ -324,6 +325,10 @@ footer a i {
 }
 
 .eventos-r div a button:hover {
+    box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
+    -webkit-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
+    -moz-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
+    transition: 0.5s;
     background-color: white;
     color: black;
 }
@@ -335,7 +340,7 @@ footer a i {
 .eventos1 {
     border-bottom: 1px solid rgba(104, 101, 101, 0.719);
     margin: 20px;
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,6 +384,9 @@ footer a i {
     transition: 0.8s;
 }
 .eventos1 div a button:hover {
+    box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
+    -webkit-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
+    -moz-box-shadow: -3px 12px 39px -2px rgba(0,0,0,0.72);
     background-color: white;
     color: black;
 }
@@ -387,7 +395,7 @@ footer a i {
 
 .eventos1 img {
     padding: 5px;
-    height: 100%;
+    height: 600px;
 }
 
 
@@ -455,7 +463,7 @@ footer a i {
 
 
 
-/*!----------------------------Estacion del arte-------------------------*/
+/*!----------------------------ESTACION DEL ARTE-------------------------*/
 .e-banner {
     width: 100%;
     height: 900px;
@@ -510,6 +518,8 @@ footer a i {
     align-items: center;
 } 
 .formu p {
+    text-transform: uppercase;
+    text-align: center;
     font-size: 25px;
 }
 
@@ -616,7 +626,6 @@ footer a i {
 
 
 
-
 .img-11 {
     grid-row: span 2;
 }
@@ -662,37 +671,20 @@ footer a i {
     nav div div ul li a {
         font-size: 16px !important;
     } 
-    .hero h1 {
-        font-size: 50px;
-        padding: 10px;
-        margin-bottom: 40px;
-    }
-    .hero p {
-        font-size: 23px;
-    }
 }
 
 
 
 @media screen and (max-width:860px) {
-    
-
     footer ul li {
         margin: 10px;
         list-style: none;
     }
-
-    
 }
 
 @media screen and (max-width:776px){
     header{
         position: static;
-    }
-    .hero h1 {
-        font-size: 40px;
-        padding: 5px;
-        margin-bottom: 20px;
     }
     .hero p {
         font-size: 20px;
@@ -719,20 +711,114 @@ footer a i {
 }
 
 
-@media screen and (max-width:680px) {
-    .hero h1 {
-        font-size: 35px;
+@media screen and (max-width:475px) {
+    .hero h2 {
+        font-size: 40px;
     }
+    
     .hero p {
         font-size: 15px;
     }
-    h2{
-        font-size: 20px;
-    }
-
 }
 
 
+
+/*!----------------RESPONSIVE EVENTOS--------------------!*/
+
+
+
+@media screen and (max-width:1370px) {
+    .eventos-r img{
+        height: 500px;
+    }
+    .eventos1 img{
+        height: 500px;
+    }
+    .eventos-r div h4{
+        font-size: 30px;
+    }
+    .eventos-r p{
+        font-size: 15px;
+    }
+    .eventos1 div h4 {
+        font-size: 30px;
+    }
+    .eventos1 p{
+        font-size: 15px;
+    }
+    .eventos1 div a button{
+        font-size: 20px;
+    }
+    .eventos-r div a button{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1330px) {
+    .eventos-r{
+        flex-direction: column;
+    }
+    
+    .eventos-r img{
+        height: 400px;
+    }
+    .eventos1 img{
+        height: 400px;
+    }
+    .eventos1{
+        flex-direction: column;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+    .eventos1 div h4 {
+        font-size: 25px;
+    }
+    .eventos-r div h4 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .eventos1 div h4 {
+        font-size: 20px;
+    }
+    .eventos-r div h4 {
+        font-size: 20px;
+    }
+}
+
+/*!----------------RESPONSIVE NOSOTROS--------------------!*/
+
+@media screen and (max-width:1040px) {
+    .nosotros div p {
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .nosotros div img {
+        height: 500px;
+    }
+    .nosotros div p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .nosotros div img {
+        height: 350px;
+}
+}
+
+@media screen and (max-width:420px) {
+    .nosotros div img {
+        height: 300px;
+}
+}
 
 
 
@@ -767,7 +853,6 @@ footer a i {
 
 
 @media screen and (max-width:600px) {
-    
     .grid-item{
         grid-column: span 1;
         grid-row: span 1;
@@ -782,85 +867,61 @@ footer a i {
     }
 }
 
+/*!------------------RESPONSIVE - ESTACION--------------------!*/
 
-
-
-/*------------RESPONSIVE - EVENTOS --------------*/
-
-@media screen and (max-width:991px) {
-    .eventos-r {
-        height: 400px;
-    }
-
-    .eventos1 {
-        height: 400px;
-    }
-}
-
-@media screen and (max-width:841px) {
-    .eventos-r p {
-        font-size: 16px;
-    }
-    .eventos1 p {
-        font-size: 16px;
-    }
-    .eventos-r div a {
-        font-size: 20px;
-        padding: 6px;
-    }
-    .eventos1 div a{
-        font-size: 20px;
-        padding: 6px;
-    }
-}
-
-@media screen and (max-width:751px) {
-
-    .eventos-r {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    .eventos1 {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    .eventos-r img {
-        width: 400px;
-        height: 500px;
-        margin-bottom: 15px;
-    }
-    .eventos1 img {
-        width: 400px;
-        height: 500px;
-        margin-bottom: 15px;
-    }
-}
-
-
-@media screen and (max-width:473px) {
-    .eventos-r img {
+@media screen and (max-width:1250px) {
+    .e-imagen img {
         width: 300px;
         height: 400px;
     }
+}
 
-    .eventos1 img {
+@media screen and (max-width:950px) {
+    .e-imagen img {
+        width: 250px;
+        height: 350px;
+    }
+    .formu p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:776px) {
+    .e-imagen {
+        flex-direction: column;
+        align-items: center;
+    }
+    .e-imagen img {
         width: 300px;
         height: 400px;
+        margin-bottom: 10px;
     }
+}
 
-    .eventos1 p {
-        font-size: 12px;
+@media screen and (max-width:601px) {
+    .text-banner {
+        font-size: 15px;
     }
+}
 
-    .eventos-r p{
-        font-size: 12px;
+@media screen and (max-width:510px) {
+    .e-banner {
+        width: auto;
+    }
+    .text-banner {
+        width: 300px;
+        height: 700px;
+    }
+    .formu p {
+        font-size: 15px;
     }
 }
 
 
+/*!-----------RESPONSIVE - CONTACTO--------------*/
 
-
-
-
+@media screen and (max-width:501px) {
+    .formulario div {
+        width: 300px;
+    }
+}
