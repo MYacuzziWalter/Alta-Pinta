@@ -273,6 +273,7 @@ footer a i {
 
 
 .eventos-r {
+    border-bottom: 1px solid rgba(104, 101, 101, 0.719);
     margin: 20px;
     height: 500px;
     display: flex;
@@ -280,7 +281,6 @@ footer a i {
     justify-content: center;
     align-items: center;
 }
-
 
 .eventos-r div {
     width: 90%;
@@ -290,35 +290,59 @@ footer a i {
     align-items: center;
 }
 
+.eventos-r div h4 {
+    font-size: 35px;
+}
 
 .eventos-r img {
     padding: 5px;
     height: 100%;
 }
 
-
 .eventos-r p {
     font-size: 20px;
     text-align: center;
 }
 
-
 .eventos-r div a {
+    text-decoration: none;
+}
+
+.eventos-r div a i {
+    font-size: 30px;
+    color: black;
+}
+
+.eventos-r div a button{
+    background-color: black;
     margin: 20px;
     color: white;
     font-size: 25px;
-    text-decoration: none;
     border-radius: 10px;
     padding: 10px;
+    transition: 0.8s;
+}
+
+.eventos-r div a button:hover {
+    background-color: white;
+    color: black;
 }
 
 
+
+
+
 .eventos1 {
+    border-bottom: 1px solid rgba(104, 101, 101, 0.719);
     margin: 20px;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.eventos1 div h4 {
+    font-size: 35px;
 }
 
 
@@ -337,12 +361,26 @@ footer a i {
 }
 
 .eventos1 div a {
-    margin: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
     text-decoration: none;
+}
+
+.eventos1 div a i {
+    font-size: 30px;
+    color: black;
+}
+
+.eventos1 div a button{
+    background-color: black;
+    margin: 20px;
+    color: white;
+    font-size: 25px;
     border-radius: 10px;
     padding: 10px;
+    transition: 0.8s;
+}
+.eventos1 div a button:hover {
+    background-color: white;
+    color: black;
 }
 
 
@@ -382,7 +420,7 @@ footer a i {
 }
 
 .nosotros div img {
-    height: 600px;
+    height: 700px;
     border-radius: 15px;
 }
 
@@ -391,10 +429,18 @@ footer a i {
 }
 
 .nosotros div a button {
-    border: solid 1px grey;
-    color: black;
     border-radius: 5px;
+    background-color: black;
+    color: white;
     padding: 8px 50px;
+    transition: 0.5s;
+}
+
+.nosotros div a button:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px rgba(128, 128, 128, 0.616);
+    border-radius: 5px;
 }
 
 .nosotros div a {
