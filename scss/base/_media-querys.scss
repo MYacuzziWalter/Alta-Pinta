@@ -1,41 +1,22 @@
-/*! --------------Index---------------*/
-
-
-@media screen and (max-width:1040px) {
-    nav div div ul li a {
+@media (max-width:1040px) {
+    body header nav div div ul li a {
         font-size: 16px !important;
     } 
-    .hero h1 {
-        font-size: 50px;
-        padding: 10px;
-        margin-bottom: 40px;
-    }
-    .hero p {
-        font-size: 23px;
-    }
 }
 
 
 
-@media screen and (max-width:860px) {
-    
-    
-
+@media screen and (max-width:900px) {
     footer ul li {
         margin: 10px;
-        list-style: none;
     }
-
-    
 }
 
-@media screen and (max-width:776px){
-    .hero h1 {
-        font-size: 40px;
-        padding: 5px;
-        margin-bottom: 20px;
+@media screen and (max-width:800px){
+    body header{
+        position: static;
     }
-    .hero p {
+    body main .hero p {
         font-size: 20px;
     }
     footer{
@@ -60,15 +41,223 @@
 }
 
 
-@media screen and (max-width:680px) {
-    .hero h1 {
-        font-size: 35px;
+@media screen and (max-width:500px) {
+    body main .hero h2 {
+        font-size: 40px;
     }
-    .hero p {
+    
+    body main .hero p {
         font-size: 15px;
     }
-    h2{
+}
+
+
+
+/*!----------------RESPONSIVE EVENTOS--------------------!*/
+
+
+
+@media screen and (max-width:1440px) {
+    body main .eventos-r img{
+        height: 500px;
+    }
+    body main .eventos-r div h4{
+        font-size: 30px;
+    }
+    body main .eventos-r p{
+        font-size: 15px;
+    }
+    body main .eventos-r div a button{
         font-size: 20px;
     }
 
+    
+    body main .eventos1 img{
+        height: 500px;
+    }
+    body main .eventos1 div h4 {
+        font-size: 30px;
+    }
+    body main .eventos1 p{
+        font-size: 15px;
+    }
+    body main .eventos1 div a button{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width:1330px) {
+    body main .eventos-r{
+        flex-direction: column;
+    }
+    
+    body main .eventos-r img{
+        height: 400px;
+    }
+    body main .eventos1 img{
+        height: 400px;
+    }
+    body main .eventos1{
+        flex-direction: column;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+    body main .eventos1 div h4 {
+        font-size: 25px;
+    }
+    body main .eventos-r div h4 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body main .eventos1 div h4 {
+        font-size: 20px;
+    }
+    body main .eventos-r div h4 {
+        font-size: 20px;
+    }
+}
+
+/*!----------------RESPONSIVE NOSOTROS--------------------!*/
+
+@media screen and (max-width:1040px) {
+    body main .nosotros div p {
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    body main .nosotros div img {
+        height: 500px;
+    }
+    body main .nosotros div p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body main .nosotros div img {
+        height: 350px;
+}
+}
+
+@media screen and (max-width:420px) {
+    body main .nosotros div img {
+        height: 300px;
+    }
+}
+
+
+
+
+/*----------------RESPONSIVE - GALERIA DE FOTOS---------------*/
+
+@media screen and (max-width:1150px) {
+    body main .grid-galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 220px;
+    }
+    body main .grid-galeria .img-4 {
+        grid-row: span 1;
+    }
+
+    body main .grid-galeria .img-15 {
+        grid-column: span 2;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    body main .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    }
+    body main .grid-galeria .img-2 {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    body main .grid-galeria .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    body main .grid-galeria {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 200px;
+    }
+}
+
+/*!------------------RESPONSIVE - ESTACION--------------------!*/
+
+@media screen and (max-width:1330px) {
+    body main .e-imagen img { 
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    body main .e-imagen img {
+        width: 250px;
+        height: 350px;
+    }
+    body main .formu p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body main .e-imagen {
+        flex-direction: column;
+        align-items: center;
+    }
+    body main .e-imagen img {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body main .e-banner div .text-banner {
+        font-size: 15px;
+    }
+    body main .e-banner {
+        width: auto;
+    }
+    body main .e-banner div .text-banner {
+        width: 300px;
+        height: 700px;
+    }
+    body main .formu p {
+        font-size: 15px;
+    }
+
+    body main .formu div form div label {
+        font-size: 15px;
+    }
+}
+
+
+
+
+/*!-----------RESPONSIVE - CONTACTO--------------*/
+
+@media screen and (max-width:500px) {
+    body main .formulario div {
+        width: 300px;
+    }
 }
