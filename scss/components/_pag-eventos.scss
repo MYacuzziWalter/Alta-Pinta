@@ -2,7 +2,7 @@ main {
     .eventos-r{
         border-bottom: 1px solid rgba(104, 101, 101, 0.719);
         margin: 20px;
-        height: 500px;
+        height: auto;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -12,7 +12,7 @@ main {
             height: 100%;
         }
         div{
-            width: 90%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -61,7 +61,7 @@ main {
     .eventos1{
         border-bottom: 1px solid rgba(104, 101, 101, 0.719);
         margin: 20px;
-        height: 500px;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -326,16 +326,16 @@ footer {
 main .eventos-r {
   border-bottom: 1px solid rgba(104, 101, 101, 0.719);
   margin: 20px;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center; }
   main .eventos-r img {
     padding: 5px;
-    height: 100%; }
+    height: 600px; }
   main .eventos-r div {
-    width: 90%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -369,13 +369,13 @@ main .eventos-r {
 main .eventos1 {
   border-bottom: 1px solid rgba(104, 101, 101, 0.719);
   margin: 20px;
-  height: 500px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center; }
   main .eventos1 img {
     padding: 5px;
-    height: 100%; }
+    height: 600px; }
   main .eventos1 div {
     width: 100%;
     display: flex;
