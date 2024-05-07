@@ -376,36 +376,36 @@ main .eventos1 {
   main .eventos1 img {
     padding: 5px;
     height: 600px; }
+  main .eventos1 div h4 {
+    font-size: 35px; }
+  main .eventos1 div p {
+    font-size: 20px;
+    text-align: center; }
+  main .eventos1 div a {
+    text-decoration: none; }
+    main .eventos1 div a button {
+      background-color: black;
+      margin: 20px;
+      color: white;
+      font-size: 25px;
+      border-radius: 10px;
+      padding: 10px;
+      transition: 0.8s; }
+      main .eventos1 div a button:hover {
+        box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
+        -webkit-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
+        -moz-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
+        background-color: white;
+        color: black; }
   main .eventos1 div {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    main .eventos1 div h4 {
-      font-size: 35px; }
-    main .eventos1 div p {
-      font-size: 20px;
-      text-align: center; }
-    main .eventos1 div a {
-      text-decoration: none; }
-      main .eventos1 div a button {
-        background-color: black;
-        margin: 20px;
-        color: white;
-        font-size: 25px;
-        border-radius: 10px;
-        padding: 10px;
-        transition: 0.8s; }
-        main .eventos1 div a button:hover {
-          box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-          -webkit-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-          -moz-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-          background-color: white;
-          color: black; }
-  main .eventos1 div a i {
-    font-size: 30px;
-    color: black; }
+    main .eventos1 div a i {
+      font-size: 30px;
+      color: black; }
 
 .nosotros {
   text-align: center;
