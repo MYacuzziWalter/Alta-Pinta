@@ -1,19 +1,31 @@
-@media (max-width:1040px) {
-    body header nav div div ul li a {
+@media screen and (max-width:1040px) {
+    nav div div ul li a {
         font-size: 16px !important;
-    } 
-}
-
-
-
-@media screen and (max-width:900px) {
-    footer ul li {
-        margin: 10px;
+    }
+    body main .tarjetas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    body main .tarjetas .resenia {
+        margin: 15px 0 15px 0;
     }
 }
 
-@media screen and (max-width:800px){
-    body header{
+
+
+@media screen and (max-width:860px) {
+    footer ul li {
+        margin: 10px;
+        list-style: none;
+    }
+    body main .tarjetas .box{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:776px){
+    header{
         position: static;
     }
     body main .hero p {
@@ -40,8 +52,26 @@
     }
 }
 
+@media screen and (max-width:726px){
+    body main .tarjetas {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h3{
+        font-size: 28px;
+    }
+}
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:520px) {
+    body main .tarjetas .box {
+        width: 320px;
+    }
+}
+
+
+
+@media screen and (max-width:475px) {
     body main .hero h2 {
         font-size: 40px;
     }
@@ -57,21 +87,7 @@
 
 
 
-@media screen and (max-width:1440px) {
-    body main .eventos-r img{
-        height: 500px;
-    }
-    body main .eventos-r div h4{
-        font-size: 30px;
-    }
-    body main .eventos-r p{
-        font-size: 15px;
-    }
-    body main .eventos-r div a button{
-        font-size: 20px;
-    }
-
-    
+@media screen and (max-width:1370px) {
     body main .eventos1 img{
         height: 500px;
     }
@@ -84,17 +100,10 @@
     body main .eventos1 div a button{
         font-size: 20px;
     }
-    
+
 }
 
 @media screen and (max-width:1330px) {
-    body main .eventos-r{
-        flex-direction: column;
-    }
-    
-    body main .eventos-r img{
-        height: 400px;
-    }
     body main .eventos1 img{
         height: 400px;
     }
@@ -104,13 +113,20 @@
     
 }
 
+@media screen and (max-width:725px) {
+    body main .eventos1 img {
+        width: 580px;
+    }
+}
 
-@media screen and (max-width:600px) {
+
+@media screen and (max-width:601px) {
     body main .eventos1 div h4 {
         font-size: 25px;
     }
-    body main .eventos-r div h4 {
-        font-size: 25px;
+    body main .eventos1 img {
+        width: 480px;
+        height: 300px;
     }
 }
 
@@ -118,8 +134,9 @@
     body main .eventos1 div h4 {
         font-size: 20px;
     }
-    body main .eventos-r div h4 {
-        font-size: 20px;
+    body main .eventos1 img {
+        width: 300px;
+        height: 200px;
     }
 }
 
@@ -141,7 +158,7 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:550px) {
     body main .nosotros div img {
         height: 350px;
 }
@@ -150,7 +167,7 @@
 @media screen and (max-width:420px) {
     body main .nosotros div img {
         height: 300px;
-    }
+}
 }
 
 
@@ -163,17 +180,17 @@
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 220px;
     }
-    body main .grid-galeria .img-4 {
+    body main .grid-galeria .grid-item .img-4 {
         grid-row: span 1;
     }
 
-    body main .grid-galeria .img-15 {
+    body main .grid-galeria .grid-item .img-15 {
         grid-column: span 2;
     }
 }
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:850px) {
     body main .grid-galeria {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 200px;
@@ -186,7 +203,7 @@
 
 
 @media screen and (max-width:600px) {
-    body main .grid-galeria .grid-item{
+    body main .grid-item{
         grid-column: span 1;
         grid-row: span 1;
     }
@@ -195,21 +212,37 @@
 
 @media screen and (max-width:500px) {
     body main .grid-galeria {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         grid-auto-rows: 200px;
     }
 }
 
 /*!------------------RESPONSIVE - ESTACION--------------------!*/
 
-@media screen and (max-width:1330px) {
-    body main .e-imagen img { 
-        width: 300px;
+@media screen and (max-width:1311px) {
+    body main .e-banner img {
+        width: 350px;
+        height: 400px;
+    }
+    body main .e-imagen img {
+        width: 350px;
         height: 400px;
     }
 }
 
-@media screen and (max-width:1040px) {
+@media screen and (max-width:1250px) {
+    body main .e-banner img {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:1022px) {
+    body main .e-banner img {
+        display: none;
+    }
+}
+@media screen and (max-width:950px) {
     body main .e-imagen img {
         width: 250px;
         height: 350px;
@@ -219,7 +252,7 @@
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:776px) {
     body main .e-imagen {
         flex-direction: column;
         align-items: center;
@@ -231,10 +264,13 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:601px) {
     body main .e-banner div .text-banner {
         font-size: 15px;
     }
+}
+
+@media screen and (max-width:510px) {
     body main .e-banner {
         width: auto;
     }
@@ -245,19 +281,13 @@
     body main .formu p {
         font-size: 15px;
     }
-
-    body main .formu div form div label {
-        font-size: 15px;
-    }
 }
-
-
 
 
 /*!-----------RESPONSIVE - CONTACTO--------------*/
 
-@media screen and (max-width:500px) {
-    body main .formulario div {
+@media screen and (max-width:501px) {
+    body main .formulario form .mb-3 {
         width: 300px;
     }
 }

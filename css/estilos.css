@@ -15,8 +15,8 @@ body {
   background-color: white !important; }
 
 h3 {
+  margin: 0;
   text-align: center;
-  background-image: url(../img/footer.jpg);
   background-position: center;
   background-size: cover;
   height: 80px;
@@ -45,7 +45,7 @@ main .hero {
   color: white;
   background-image: url(../img/Fondo-hero.jpeg);
   width: 100%;
-  height: 550px;
+  height: 450px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -56,11 +56,12 @@ main .hero {
   align-items: center; }
   main .hero h1 {
     font-weight: 500;
-    font-size: 55px;
+    font-size: 60px;
     border: yellow 3px solid;
-    padding: 10px;
+    padding: 18px;
     margin-bottom: 40px;
-    background-color: rgba(15, 15, 15, 0.397); }
+    background-color: rgba(15, 15, 15, 0.397);
+    animation-iteration-count: infinite; }
     main .hero h1 span:nth-child(1) {
       color: #fbff1c; }
     main .hero h1 span:nth-child(2) {
@@ -74,12 +75,13 @@ main .hero {
     padding: 10px 50px; }
   main .hero h2 {
     font-weight: 500;
-    font-size: 55px;
+    font-size: 50px;
     border: yellow 3px solid;
     padding: 10px;
     margin-bottom: 40px;
     background-color: rgba(15, 15, 15, 0.397); }
   main .hero p {
+    text-align: center;
     font-weight: 500;
     font-style: normal;
     background-color: rgba(27, 94, 66, 0.425);
@@ -87,48 +89,48 @@ main .hero {
     font-size: 25px;
     font-style: italic; }
 
-main .tarjetas {
+main .calecita {
+  position: relative;
+  background-color: #000000;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .calecita div div div img {
+    margin-top: 20px; }
+  main .calecita div a button {
+    font-size: 25px;
+    padding: 10px 30px;
+    margin: 15px; }
+
+main .tarjetas {
+  background-color: #f4dfc8;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   main .tarjetas .box {
-    background: linear-gradient(50deg, rgba(56, 56, 56, 0.288), white);
-    width: 300px;
-    height: 450px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 30px;
+    width: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-    -webkit-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-    -moz-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-    transition: 0.5s; }
-    main .tarjetas .box:hover {
-      background-color: black;
-      color: white;
-      transform: scale(1.1); }
+    align-items: center; }
+    main .tarjetas .box a {
+      margin-bottom: 10px; }
     main .tarjetas .box img {
-      object-fit: cover;
-      width: 100%;
-      height: 200px;
-      margin-bottom: 30px; }
-    main .tarjetas .box div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      main .tarjetas .box div button {
-        transition: 0.5s; }
-        main .tarjetas .box div button:hover {
-          background-color: white;
-          color: white; }
-        main .tarjetas .box div button a {
-          color: black;
-          list-style: none;
-          text-decoration: none; }
+      border-radius: 15px;
+      padding: 10px;
+      object-fit: cover; }
+  main .tarjetas .resenia {
+    border-radius: 10px;
+    box-shadow: -8px 9px 54px -16px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -8px 9px 54px -16px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 9px 54px -16px rgba(0, 0, 0, 0.75);
+    width: 220px;
+    margin-right: 200px;
+    padding: 20px; }
+    main .tarjetas .resenia p img {
+      margin-right: 10px; }
 
 footer {
   margin-top: 100px;
@@ -160,16 +162,25 @@ footer {
         text-decoration: none;
         color: black; }
 
-@media (max-width: 1040px) {
-  body header nav div div ul li a {
-    font-size: 16px !important; } }
+@media screen and (max-width: 1040px) {
+  nav div div ul li a {
+    font-size: 16px !important; }
+  body main .tarjetas {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  body main .tarjetas .resenia {
+    margin: 15px 0 15px 0; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 860px) {
   footer ul li {
-    margin: 10px; } }
+    margin: 10px;
+    list-style: none; }
+  body main .tarjetas .box {
+    width: 500px; } }
 
-@media screen and (max-width: 800px) {
-  body header {
+@media screen and (max-width: 776px) {
+  header {
     position: static; }
   body main .hero p {
     font-size: 20px; }
@@ -188,22 +199,26 @@ footer {
     margin: 18px;
     font-size: 15px; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 726px) {
+  body main .tarjetas {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  h3 {
+    font-size: 28px; } }
+
+@media screen and (max-width: 520px) {
+  body main .tarjetas .box {
+    width: 320px; } }
+
+@media screen and (max-width: 475px) {
   body main .hero h2 {
     font-size: 40px; }
   body main .hero p {
     font-size: 15px; } }
 
 /*!----------------RESPONSIVE EVENTOS--------------------!*/
-@media screen and (max-width: 1440px) {
-  body main .eventos-r img {
-    height: 500px; }
-  body main .eventos-r div h4 {
-    font-size: 30px; }
-  body main .eventos-r p {
-    font-size: 15px; }
-  body main .eventos-r div a button {
-    font-size: 20px; }
+@media screen and (max-width: 1370px) {
   body main .eventos1 img {
     height: 500px; }
   body main .eventos1 div h4 {
@@ -214,26 +229,28 @@ footer {
     font-size: 20px; } }
 
 @media screen and (max-width: 1330px) {
-  body main .eventos-r {
-    flex-direction: column; }
-  body main .eventos-r img {
-    height: 400px; }
   body main .eventos1 img {
     height: 400px; }
   body main .eventos1 {
     flex-direction: column; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 725px) {
+  body main .eventos1 img {
+    width: 580px; } }
+
+@media screen and (max-width: 601px) {
   body main .eventos1 div h4 {
     font-size: 25px; }
-  body main .eventos-r div h4 {
-    font-size: 25px; } }
+  body main .eventos1 img {
+    width: 480px;
+    height: 300px; } }
 
 @media screen and (max-width: 500px) {
   body main .eventos1 div h4 {
     font-size: 20px; }
-  body main .eventos-r div h4 {
-    font-size: 20px; } }
+  body main .eventos1 img {
+    width: 300px;
+    height: 200px; } }
 
 /*!----------------RESPONSIVE NOSOTROS--------------------!*/
 @media screen and (max-width: 1040px) {
@@ -247,7 +264,7 @@ footer {
   body main .nosotros div p {
     font-size: 16px; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   body main .nosotros div img {
     height: 350px; } }
 
@@ -260,12 +277,12 @@ footer {
   body main .grid-galeria {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 220px; }
-  body main .grid-galeria .img-4 {
+  body main .grid-galeria .grid-item .img-4 {
     grid-row: span 1; }
-  body main .grid-galeria .img-15 {
+  body main .grid-galeria .grid-item .img-15 {
     grid-column: span 2; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
   body main .grid-galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px; }
@@ -274,29 +291,41 @@ footer {
     grid-column: span 1; } }
 
 @media screen and (max-width: 600px) {
-  body main .grid-galeria .grid-item {
+  body main .grid-item {
     grid-column: span 1;
     grid-row: span 1; } }
 
 @media screen and (max-width: 500px) {
   body main .grid-galeria {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-auto-rows: 200px; } }
 
 /*!------------------RESPONSIVE - ESTACION--------------------!*/
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1311px) {
+  body main .e-banner img {
+    width: 350px;
+    height: 400px; }
   body main .e-imagen img {
-    width: 300px;
+    width: 350px;
     height: 400px; } }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1250px) {
+  body main .e-banner img {
+    width: 250px;
+    height: 350px; } }
+
+@media screen and (max-width: 1022px) {
+  body main .e-banner img {
+    display: none; } }
+
+@media screen and (max-width: 950px) {
   body main .e-imagen img {
     width: 250px;
     height: 350px; }
   body main .formu p {
     font-size: 20px; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 776px) {
   body main .e-imagen {
     flex-direction: column;
     align-items: center; }
@@ -305,70 +334,29 @@ footer {
     height: 400px;
     margin-bottom: 10px; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 601px) {
   body main .e-banner div .text-banner {
-    font-size: 15px; }
+    font-size: 15px; } }
+
+@media screen and (max-width: 510px) {
   body main .e-banner {
     width: auto; }
   body main .e-banner div .text-banner {
     width: 300px;
     height: 700px; }
   body main .formu p {
-    font-size: 15px; }
-  body main .formu div form div label {
     font-size: 15px; } }
 
 /*!-----------RESPONSIVE - CONTACTO--------------*/
-@media screen and (max-width: 500px) {
-  body main .formulario div {
+@media screen and (max-width: 501px) {
+  body main .formulario form .mb-3 {
     width: 300px; } }
 
-main .eventos-r {
-  border-bottom: 1px solid rgba(104, 101, 101, 0.719);
-  margin: 20px;
-  height: auto;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center; }
-  main .eventos-r img {
-    padding: 5px;
-    height: 600px; }
-  main .eventos-r div {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    main .eventos-r div p {
-      font-size: 20px;
-      text-align: center; }
-    main .eventos-r div a {
-      text-decoration: none; }
-      main .eventos-r div a i {
-        font-size: 30px;
-        color: black; }
-  main .eventos-r div h4 {
-    font-size: 35px; }
-  main .eventos-r div a button {
-    background-color: black;
-    margin: 20px;
-    color: white;
-    font-size: 25px;
-    border-radius: 10px;
-    padding: 10px;
-    transition: 0.8s; }
-    main .eventos-r div a button:hover {
-      box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-      -webkit-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-      -moz-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-      transition: 0.5s;
-      background-color: white;
-      color: black; }
-
 main .eventos1 {
+  width: 100%;
+  background-color: black;
+  color: #f4dfc8;
   border-bottom: 1px solid rgba(104, 101, 101, 0.719);
-  margin: 20px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -376,27 +364,35 @@ main .eventos1 {
   main .eventos1 img {
     padding: 5px;
     height: 600px; }
-  main .eventos1 div h4 {
-    font-size: 35px; }
-  main .eventos1 div p {
-    font-size: 20px;
-    text-align: center; }
-  main .eventos1 div a {
-    text-decoration: none; }
-    main .eventos1 div a button {
-      background-color: black;
-      margin: 20px;
+  main .eventos1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px; }
+    main .eventos1 div h4 {
       color: white;
-      font-size: 25px;
-      border-radius: 10px;
-      padding: 10px;
-      transition: 0.8s; }
-      main .eventos1 div a button:hover {
-        box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-        -webkit-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-        -moz-box-shadow: -3px 12px 39px -2px rgba(0, 0, 0, 0.72);
-        background-color: white;
-        color: black; }
+      text-align: center;
+      font-size: 30px; }
+    main .eventos1 div p {
+      font-size: 20px;
+      text-align: center; }
+    main .eventos1 div a {
+      text-decoration: none; }
+      main .eventos1 div a button {
+        background-color: black;
+        margin: 20px;
+        color: white;
+        font-size: 25px;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.8s; }
+        main .eventos1 div a button:hover {
+          background-color: white;
+          color: black; }
+    main .eventos1 div .important {
+      font-size: 15px; }
   main .eventos1 div {
     width: 50%;
     display: flex;
@@ -425,21 +421,8 @@ main .eventos1 {
     .nosotros div img {
       height: 700px;
       border-radius: 15px; }
-    .nosotros div i {
-      font-size: 40px; }
-    .nosotros div a {
-      font-size: 20px; }
-      .nosotros div a button {
-        border-radius: 5px;
-        background-color: black;
-        color: white;
-        padding: 8px 50px;
-        transition: 0.5s; }
-        .nosotros div a button:hover {
-          background-color: white;
-          color: black;
-          border: solid 2px rgba(128, 128, 128, 0.616);
-          border-radius: 5px; }
+  .nosotros div i {
+    font-size: 40px; }
 
 .e-banner {
   width: 100%;
@@ -455,7 +438,11 @@ main .eventos1 {
     background: url(../img/backgroun-estacion.JPG);
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.3; }
+    opacity: 0.2; }
+  .e-banner img {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px; }
   .e-banner div .text-banner {
     width: 500px;
     height: 500px;
@@ -473,24 +460,19 @@ main .eventos1 {
   .e-imagen img {
     width: 400px;
     height: 500px;
-    border-radius: 20px;
-    opacity: 0.8; }
+    border-radius: 20px; }
 
 .formu {
   margin-top: 50px;
-  font-size: 20px;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .formu p {
-    font-size: 25px; }
-  .formu div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px; }
 
 .grid-galeria {
   width: 100%;
@@ -534,22 +516,20 @@ main .eventos1 {
   .grid-galeria .img-14 {
     grid-row: span 2; }
 
-section .contacto {
+body main section .contacto {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px; }
-  section .contacto i {
-    margin-right: 10px; }
-  section .contacto p {
+  body main section .contacto p {
     margin: 0; }
 
-.formulario {
+body main .formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .formulario div {
+  body main .formulario form div {
     margin-top: 10px;
     width: 400px;
     display: flex;
