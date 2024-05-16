@@ -64,20 +64,20 @@
     </header>
     <main>
         <section class="hero">
-            <h1 class="animate__animated animate__backInUp">V<span>e</span><span>n</span>í a
+            <h1 class="animate__animated animate__pulse">V<span>e</span><span>n</span>í a
                 p<span>in</span>t<span>ar</span></h1>
-            <a href="./pages/eventos.html"><button type="button" class="btn btn-outline-light">Entradas</button></a>
+            <a href="#proximo-evento"><button type="button" class="btn btn-outline-light">Próximo evento</button></a>
         </section>
         <section class="hero">
-            <h2>¿Qué es alta pinta?</h2>
-            <p>Creamos momentos para que te distraigas
-                pintes tu propio cuadro y te tomes algo
-                PD: No haber pintado nunca NO ES UNA EXCUSA!</p>
+            <h2 class="animate__animated animate__backInUp">¿Qué es alta pinta?</h2>
+            <p>Creamos momentos para que te distraigas,
+                pintes tu propio cuadro y te tomes algo</p>
+            <p>PD: No haber pintado nunca NO ES UNA EXCUSA!</p>
         </section>
         <section>
             <h3>Próximo Evento</h3>
         </section>
-        <section class="calecita">
+        <section id="proximo-evento" class="calecita">
             <div>
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
@@ -110,47 +110,51 @@
                     </button>
                 </div>
             </div>
+            <div>
+                <a href="./pages/eventos.html"><button type="button" class="btn btn-outline-light">Mas info. y reserva</button></a>
+            </div>
         </section>
+        <h3>Eventos Realizados</h3>
         <section class="tarjetas">
             <div class="box">
-                <img src="./img/gal-foto30.jpg" alt="evento uno">
-                <div>
-                    <h4>Taberna 379</h4>
-                    <p>12 - Mayo</p>
-                    <p>De 20 a 23 hs.</p>
-                    <button type="button" class="btn btn-outline-secondary"><a href="./pages/eventos.html">Ir a
-                            evento</a></button>
-                </div>
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/img-cale1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/img-cale2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/img-cale3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/img-cale4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/img-cale6.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <a href="./pages/galeria-de-fotos.html"><button type="button" class="btn btn-outline-dark">Ver mas fotos</button></a>
             </div>
-            <div class="box">
-                <img src="./img/gal-foto41.jpg" alt="evento dos">
-                <div>
-                    <h4>Taberna San Juan</h4>
-                    <p>Fecha</p>
-                    <p>Horario</p>
-                    <button type="button" class="btn btn-outline-secondary"><a href="./pages/eventos.html">Ir a
-                            evento</a></button>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./img/gal-foto45.jpg" alt="evento tres">
-                <div>
-                    <h4>Bronx</h4>
-                    <p>Fecha</p>
-                    <p>Horario</p>
-                    <button type="button" class="btn btn-outline-secondary"><a href="./pages/eventos.html">Ir a
-                            evento</a></button>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./img/gal-foto46.jpg" alt="evento cuatro">
-                <div>
-                    <h4>Arboredo</h4>
-                    <p>Fecha</p>
-                    <p>Horario</p>
-                    <button type="button" class="btn btn-outline-secondary"><a href="./pages/eventos.html">Ir a
-                            evento</a></button>
-                </div>
+            <div class="resenia">
+                <p>"ALGUNOS COMENTARIOS"</p>
+                <p><img src="./img/like (1).png" alt="">Bellisimo</p>
+                <p><img src="./img/like (1).png" alt="">Gracias chicas por traer estas propuestas hermosas!! Se nota muchísimo el amor que le ponen a todo, nos vemos el evento que viene </p>
+                <p><img src="./img/like (1).png" alt="">Gracias chicas , fuasto feliz de compartir ese momento de arte en su cumple❤</p>
+                <p><img src="./img/like (1).png" alt="">Ameee son los más!! Un gusto habernos cruzado en el camino...fuimos todos muy felices !!❤️</p>
+                <p><img src="./img/like (1).png" alt="">Felicitaciones por tan lindo proyecto!!!! Bella manera de celebrar la vida!!! El arte en los niños como recurso vital para expresar sus emociones!!!!</p>
             </div>
         </section>
     </main>
